@@ -1,4 +1,5 @@
-// .devcontainer/devcontainer-prebuilt.json
+// .devcontainer/devcontainer.json
+// *** IMPORTANT: This file should be located at .devcontainer/devcontainer.json ***
 // Configuration using a pre-built image with AVD and Containerlab
 {
     // Name for the Dev Container configuration
@@ -9,9 +10,6 @@
 
     // Features to add to the container.
     "features": {
-        // common-utils feature removed - assuming 'avd' user exists in base image.
-        // Add back if specific tools from it are needed, configured not to create a user.
-
         // Installs Docker-in-Docker. Assumes you want DinD.
         // Remove this and add docker-outside-of-docker feature if you prefer DooD.
         "ghcr.io/devcontainers/features/docker-in-docker:2": {
@@ -20,7 +18,7 @@
             "installDockerBuildx": true,
             "installDockerComposeSwitch": true
         }
-        // Python feature removed - Python 3.11 is already in the base image.
+        // common-utils and python features removed - assuming needed components exist in base image for 'avd' user
     },
 
     // Run container in privileged mode - necessary for Docker-in-Docker. Remove if using DooD.
@@ -31,8 +29,6 @@
     // Set the default user for the container and VS Code terminal to 'avd'
     "remoteUser": "avd",
 
-    // remoteEnv for venv PATH removed - AVD/clab tools should be in the image's PATH for the 'avd' user.
-
     "hostRequirements": {
         "cpus": 4,
         "memory": "16gb",
@@ -40,8 +36,9 @@
       },
 
     // Command to run after the container is created.
-    // Points to a simplified script.
-    "postCreateCommand": "bash .devcontainer/post-create-simplified.sh",
+    // Assumes the script is renamed to 'post-create.sh' for convention.
+    // Keep 'post-create-simplified.sh' if you prefer that name.
+    "postCreateCommand": "bash .devcontainer/post-create.sh",
 
     // VS Code specific settings
     "customizations": {
@@ -51,7 +48,7 @@
                 "ms-azuretools.vscode-docker",         // Docker management
                 "ms-vscode-remote.remote-containers",  // Core Dev Containers extension
                 "ms-python.python",                    // Python support (useful even with pre-installed Python)
-                "srl-labs.vscode-containerlab"     // Containerlab extension
+                "srl-labs.vscode-containerlab",        // Containerlab extension - CORRECT ID
                 // "redhat.ansible",                   // Optional: Ansible support
             ],
             // Settings to apply inside the container
@@ -68,7 +65,7 @@
                 // Python/Ansible venv paths removed. Extensions should auto-detect system paths.
                 // Ensure generic YAML files are handled by the default YAML handler
                 "[yaml]": {
-                    //"editor.defaultFormatter": "redhat.vscode-yaml" // Assuming redhat.vscode-yaml is installed
+                    "editor.defaultFormatter": "redhat.vscode-yaml" // Assuming redhat.vscode-yaml is installed
                 }
             }
         }
