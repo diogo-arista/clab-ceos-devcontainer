@@ -8,6 +8,7 @@ It leverages a pre-built Docker image (`ghcr.io/aristanetworks/aclabs/lab-base:p
 * Containerlab v0.60.1
 * Arista AVD v5.1.0 (including `pyavd` and `ansible-core`)
 * Common development tools
+* Containerlab VS Code extension
 
 The environment is designed to be opened using VS Code Dev Containers.
 
