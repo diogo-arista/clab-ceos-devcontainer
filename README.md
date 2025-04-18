@@ -40,10 +40,10 @@ The environment is designed to be opened using VS Code Dev Containers.
     * Set up an alias so typing `clab` automatically runs `sudo clab`.
     * Create a default `ansible.cfg` if one doesn't exist.
     * Import the cEOS image file from the workspace into the container's Docker environment (and remove the original file).
+Note that all devcontainer creation actions may take few few minutes (depending on the network connection and host performance) to complete.
 
 ## Using the Environment
 
-* **User:** You will be logged in as the `avd` user inside the container.
 * **Terminal:** Open a terminal manually in VS Code (`Terminal > New Terminal` or `Ctrl+`` / `Cmd+``). The automatic terminal opening task has been disabled.
 * **Tools:** `containerlab`, `ansible`, `ansible-playbook`, `git`, etc., are pre-installed and should be available in your PATH.
 * **Running Containerlab:**
