@@ -20,7 +20,7 @@ The environment is designed to be opened using VS Code Dev Containers.
     * Docker Desktop (Windows/macOS)
     * Podman Desktop (v5.0+ recommended, Linux/Windows/macOS)
 4.  **Arista cEOS Image:** Download the appropriate cEOS lab image file (e.g., `cEOS-lab-4.xx.x.tar.xz` or `cEOSarm-lab-4.xx.x.tar.xz`) from your Arista account.
-    * **IMPORTANT:** Place this file in the **root directory** of this repository *before* launching the Dev Container for the first time.
+    * **IMPORTANT:** Place this file in the **root directory** of this repository *before* launching the Dev Container for the first time. You can do it later, but if this is the case, you will need to manually import the cEOS-lab image into docker using `docker import cEOSarm-lab-4.xx.x.tar.xz ceos:latest).
     * **Architecture:**
         * If using **macOS with Apple Silicon (M1/M2/M3)**, download the **ARM64 (aarch64)** version (e.g., `cEOSarm-lab...`).
         * If using **Windows, Linux (x86_64), or GitHub Codespaces**, download the standard **x86_64** version (e.g., `cEOS-lab...`).
