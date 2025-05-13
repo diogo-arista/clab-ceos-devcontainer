@@ -24,6 +24,9 @@ code .
 VS Code will prompt you if you want to reopen the repository in a container.
 
 ## GitHub Codespaces
+Requirements:
+- Github account
+
 You can also run this environment in GitHub Codespaces:
 
 - **Commit cEOS Image:** Add the correct **x86_64** cEOS image file to the root of the repository and commit/push it.
