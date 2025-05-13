@@ -2,6 +2,7 @@
 
 ## MacOS
 Requirements:
+- Podman
 - Git
 - VS Code (With devcontainer extension installed and enabled)
 - Download cEOS-lab
@@ -21,6 +22,13 @@ code .
 ```
 ### Reopen in a Container
 VS Code will prompt you if you want to reopen the repository in a container.
+
+## GitHub Codespaces
+You can also run this environment in GitHub Codespaces:
+
+- **Commit cEOS Image:** Add the correct **x86_64** cEOS image file to the root of the repository and commit/push it.
+- **Create Codespace:** Go to the repository on GitHub, click `<> Code` -> `Codespaces` -> `Create codespace...`.
+- The Codespace will build using the `devcontainer.json` and run the `post-create.sh` script, including importing the committed cEOS image.
     
 # Containerlab & AVD Dev Container Environment
 
@@ -86,10 +94,3 @@ Note that all devcontainer creation actions may take few few minutes (depending 
         ```
 * **cEOS Image:** The `post-create.sh` script imports your `.tar`/`.tar.xz` file and tags it as `ceos:latest` within the container's Docker environment.
 
-## GitHub Codespaces
-
-You can also run this environment in GitHub Codespaces:
-
-1.  **Commit cEOS Image:** Add the correct **x86_64** cEOS image file to the root of the repository and commit/push it.
-2.  **Create Codespace:** Go to the repository on GitHub, click `<> Code` -> `Codespaces` -> `Create codespace...`.
-3.  The Codespace will build using the `devcontainer.json` and run the `post-create.sh` script, including importing the committed cEOS image.
