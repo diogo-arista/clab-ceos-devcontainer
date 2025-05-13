@@ -4,16 +4,15 @@
 
 ### Clone the repository to your local machine:
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/diogo-arista/clab-ceos-devcontainer.git
 cd clab-ceos-devcontainer
 ```
 ### Copy/move the cEOS-lab image to the repository directory
 ```bash
-cp Downloads/cEOSarm-lab-4.33.2-EFT3.tar ~/projects/ceos-clab-101/
+cp ~/Downloads/cEOSarm-lab-4.33.2-EFT3.tar .
 ```
 ### Open the repository folder in VS Code:
 ```bash
-cd ~/projects/ceos-clab-101/
 code .
 ```
     
