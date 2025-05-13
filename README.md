@@ -1,10 +1,10 @@
 # TLDR 
 
 ## Clone the repository in your local machine:
-    ```bash
-    git clone <your-repository-url>
-    cd clab-ceos-devcontainer
-    ```
+        ```bash
+        git clone <your-repository-url>
+        cd clab-ceos-devcontainer
+        ```
 ## Copy/move the cEOS-lab image to the repository directory
     ```cp Downloads/cEOSarm-lab-4.33.2-EFT3.tar ~/projects/ceos-clab-101/
     ```
