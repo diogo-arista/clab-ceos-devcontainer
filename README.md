@@ -1,3 +1,20 @@
+# TLDR 
+
+## Clone the repository in your local machine:
+    ```bash
+    git clone <your-repository-url>
+    cd clab-ceos-devcontainer
+    ```
+## Copy/move the cEOS-lab image to the repository directory
+    ```cp Downloads/cEOSarm-lab-4.33.2-EFT3.tar ~/projects/ceos-clab-101/
+    ```
+## Open the repository folder in VS Code:
+diogo@Diogos-MacBook-Pro ~ % cd ~/projects/ceos-clab-101/
+diogo@Diogos-MacBook-Pro ceos-clab-101 % code .
+    ```cd ~/projects/ceos-clab-101/
+    code .
+    ```
+    
 # Containerlab & AVD Dev Container Environment
 
 This repository provides a ready-to-use development environment for creating and managing network labs with [Containerlab](https://containerlab.dev/), specifically tailored for use with Arista cEOS images and potentially [Arista Validated Designs (AVD)](https://avd.arista.com/).
