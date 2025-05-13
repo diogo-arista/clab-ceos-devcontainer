@@ -1,6 +1,10 @@
 # TLDR 
 
 ## MacOS
+Requirements:
+- Git
+- VS Code
+- Download cEOS-lab
 
 ### Clone the repository to your local machine:
 ```bash
