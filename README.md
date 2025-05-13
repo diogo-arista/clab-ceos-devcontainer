@@ -10,11 +10,10 @@ cd clab-ceos-devcontainer
 cp Downloads/cEOSarm-lab-4.33.2-EFT3.tar ~/projects/ceos-clab-101/
 ```
 ## Open the repository folder in VS Code:
-diogo@Diogos-MacBook-Pro ~ % cd ~/projects/ceos-clab-101/
-diogo@Diogos-MacBook-Pro ceos-clab-101 % code .
-    ```cd ~/projects/ceos-clab-101/
+```bash
+    cd ~/projects/ceos-clab-101/
     code .
-    ```
+```
     
 # Containerlab & AVD Dev Container Environment
 
