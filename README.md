@@ -3,7 +3,7 @@
 ## MacOS
 Requirements:
 - Git
-- VS Code
+- VS Code (With devcontainer extension installed and enabled)
 - Download cEOS-lab
 
 ### Clone the repository to your local machine:
@@ -19,6 +19,8 @@ cp ~/Downloads/cEOSarm-lab-4.33.2-EFT3.tar .
 ```bash
 code .
 ```
+### Reopen in a Container
+VS Code will prompt you if you want to reopen the repository in a container.
     
 # Containerlab & AVD Dev Container Environment
 
