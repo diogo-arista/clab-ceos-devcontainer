@@ -2,17 +2,17 @@
 
 ## MacOS
 Requirements:
-- Podman
-- Git
+- Podman Desktop
 - VS Code (With devcontainer extension installed and enabled)
 - Download cEOS-lab
+- Git (not required if running devcontainer)
 
 ### Clone the repository to your local machine:
 ```bash
 git clone https://github.com/diogo-arista/clab-ceos-devcontainer.git
 cd clab-ceos-devcontainer
 ```
-### Copy/move the cEOS-lab image to the repository directory
+### Copy/move the cEOS-lab image (adjust the file name and folder location according to the image you downloaded) to the repository directory:
 ```bash
 cp ~/Downloads/cEOSarm-lab-4.33.2-EFT3.tar .
 ```
